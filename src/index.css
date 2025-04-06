@@ -1,0 +1,23 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Add base styles or import fonts */
+@layer base {
+  html {
+    @apply scroll-smooth; /* Smooth scrolling for anchor links */
+  }
+  body {
+    @apply font-sans text-dark-text bg-white; /* Apply default font and text color */
+  }
+  section {
+     @apply py-16 md:py-20; /* Consistent vertical padding for sections */
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-midnight; /* Base heading styles */
+  }
+  h2 {
+    @apply text-3xl md:text-4xl mb-8 text-center; /* Section heading styles */
+  }
+}
