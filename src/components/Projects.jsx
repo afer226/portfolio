@@ -5,7 +5,7 @@ const projects = [
     title: 'Retail Point-of-Sale',
     description: 'Three-page Point-of-Sale web application for a retail scenario (ice cream shop) using React and Vite. ',
     technologies: ['React', 'JavaScript (ES6+)', 'CSS'],
-    imageUrl: 'public/retail-pos-card.png',
+    imageUrl: 'public/pos.png',
     liveUrl: 'https://retail-pos.vercel.app/',
     repoUrl: 'https://github.com/afer226/retail-pos',
   },
@@ -13,14 +13,14 @@ const projects = [
     title: 'Gone Phishing',
     description: 'Quiz-based serious game centered on educating employees on the dangers of phishing attacks.',
     technologies: ['Python', 'Flask', 'SQLAlchemy'],
-    imageUrl: 'public/catching-a-phish-card.png',
+    imageUrl: 'public/gone-phishing.png',
     repoUrl: 'https://github.com/afer226/gone-phishing',
   },
     {
     title: 'React Weather',
     description: 'Simple weather app built with Expo that lets users search for any city and view real-time temperature, conditions using the OpenWeatherMap API.',
     technologies: ['React Native', 'Axios', 'TypeScript'],
-    imageUrl: 'public/react-weather-card.png',
+    imageUrl: 'public/weather.png',
     liveUrl: '#',
     repoUrl: '#',
   },
@@ -29,7 +29,7 @@ const projects = [
 // --- Project Card ---
 const ProjectCard = ({ project }) => (
   <div className="bg-gray-700 rounded-lg shadow-lg overflow-hidden flex flex-col">
-    {project.imageUrl && <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />}
+    {project.imageUrl && <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-125 hover:bg-indigo-500" />}
     <div className="p-6 flex flex-col flex-grow">
       <h3 className="text-xl font-semibold text-orange mb-2">{project.title}</h3>
       <p className="text-white text-sm mb-4 flex-grow">{project.description}</p>
