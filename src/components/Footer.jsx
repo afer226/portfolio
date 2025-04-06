@@ -5,9 +5,9 @@ const Footer = () => {
 
   return (
     <footer className="bg-midnight text-gray-300 py-6">
-      <div className="container mx-auto px-6 text-center text-sm">
+      <div className="container mx-auto px-6 text-center text-md">
         <p>
-        Ash Fernandes &copy; {currentYear}
+        &copy; Ash Fernandes • {currentYear}
         </p>
       </div>
     </footer>
